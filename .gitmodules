@@ -1,0 +1,3 @@
+[submodule "chips"]
+	path = chips
+	url = git@github.com:sehugg/chips.git
