@@ -1,3 +1,6 @@
 [submodule "chips"]
 	path = chips
 	url = git@github.com:sehugg/chips.git
+[submodule "mame"]
+	path = mame
+	url = git@github.com:sehugg/mame.git
