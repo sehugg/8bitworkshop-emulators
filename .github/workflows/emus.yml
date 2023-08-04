@@ -13,17 +13,14 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-        
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
           
-      - name: Test Node
-        run: npm ci && node -v
-
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
       - name: Setup emsdk
         uses: mymindstorm/setup-emsdk@v11
         with:
@@ -56,5 +53,5 @@ jobs:
       - name: Publish Artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: build_artifacts
+          name: emulators_chips_wasm
           path: chips/wasm/
