@@ -15,6 +15,11 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
       - name: Setup emsdk
         uses: mymindstorm/setup-emsdk@v11
@@ -33,7 +38,7 @@ jobs:
         run: |
           # Install required dependencies
           sudo apt-get update
-          sudo apt-get install -y build-essential nodejs npm
+          sudo apt-get install -y build-essential
 
       - name: Init submodules
         run: |
