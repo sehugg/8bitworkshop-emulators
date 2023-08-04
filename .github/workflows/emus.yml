@@ -50,7 +50,8 @@ jobs:
           git submodule update
 
       - name: Build chips
-        run: cd chips && make
+        run: make
+        working-directory: chips
 
       - name: Publish Artifacts
         uses: actions/upload-artifact@v2
