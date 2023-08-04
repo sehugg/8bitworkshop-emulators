@@ -4,6 +4,3 @@
 [submodule "mame"]
 	path = mame
 	url = git@github.com:sehugg/mame.git
-[submodule "atari800"]
-	path = atari800
-	url = https://github.com/atari800/atari800
