@@ -20,7 +20,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '14'
-        run: npm ci
+          
+      - name: Test Node
+        run: npm ci && node -v
 
       - name: Setup emsdk
         uses: mymindstorm/setup-emsdk@v11
